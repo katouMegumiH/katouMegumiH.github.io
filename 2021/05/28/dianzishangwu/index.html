@@ -16,8 +16,9 @@
 <meta property="og:description" content="电子商务技术">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/2021/05/28/dianzishangwu/image-20210529182245304.png">
+<meta property="og:image" content="http://example.com/2021/05/28/dianzishangwu/image-20210530150012672.png">
 <meta property="article:published_time" content="2021-05-28T08:08:42.000Z">
-<meta property="article:modified_time" content="2021-05-29T11:05:05.480Z">
+<meta property="article:modified_time" content="2021-05-30T08:05:24.766Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2021/05/28/dianzishangwu/image-20210529182245304.png">
@@ -218,11 +219,66 @@
 <p>①商务表达层以web服务器为基础，负责信息的发布；</p>
 <p>②商务逻辑层负责处理核心业务逻辑；</p>
 <p>③数据层的基础是数据管理系统，主要负责数据的组织，并向逻辑层提供接口。</p>
-<p>7.写出电子商务系统的纵向功能架构，并作出解释。<br>8.J2EE平台由哪几部分组成？J2EE规范中涉及到哪些内容？<br>9.什么是数据抽象？什么是隐藏？什么是多态？<br>10.什么是构造函数？什么是空(默认)构造函数？</p>
+<p>7.写出电子商务系统的纵向功能架构，并作出解释。</p>
+<p><img src="/2021/05/28/dianzishangwu/image-20210530150012672.png" alt="image-20210530150012672"></p>
+<p>8.J2EE平台由哪几部分组成？J2EE规范中涉及到哪些内容？</p>
+<p>①J2EE规范；②J2EE兼容性测试站点；③J2EE参考实现(J2EE SDK);④J2EE实施指南。</p>
+<p>J2EE规范定义了J2EE平台的体系结构、平台角色及J2EE中每种服务和核心API的时限要求，它是J2EE应用服务器开发商的大纲。</p>
+<p>9.什么是数据抽象？什么是隐藏？什么是多态？ </p>
+<p>数据抽象是对现实世界的一种抽象；数据和方法被封装在类中，外面的数据实体看不到他们的具体实现，这种程序编码原则在JAVA中被称为数据隐藏；多态性是允许将父对象设置成为和一个或更多其子对象相等的技术。</p>
+<p>10.什么是构造函数？什么是空(默认)构造函数？</p>
+<p>XXX()方法和类名相同，是一种特殊的方法，称为构造函数。</p>
 <hr>
-<h2 id="第二章-商务表达层及其技术"><a href="#第二章-商务表达层及其技术" class="headerlink" title="第二章 商务表达层及其技术"></a>第二章 商务表达层及其技术</h2><h3 id="习题与思考-1"><a href="#习题与思考-1" class="headerlink" title="习题与思考"></a>习题与思考</h3><p>1.商务表达层的功能是什么？其平台实现方式有哪几种？<br>2.静态网页的特征是什么？其体系结构如何？<br>3.HTTP的含义是什么？有什么作用？具有哪些命令及命令格式？<br>4.试通过网络，详细了解HTTP协议的内容，并说明几种状态码的含义。<br>5.标记语言的种类有哪些？<br>6.XML语言有何作用？在XML中为何要使用名称空间？<br>7.CSS和XSL文件的作用是什么？试举例说明。<br>8.XML文档的应用开发涉及哪几个方面？试举例说明。<br>9.XSL解析器如何解析XML文档？试举例说明。<br>10.构成Web系统的五大要素分别是什么？<br>11.试用Javascript编写一个简单的交互应用网页。<br>12.试用Applet编写一个简单的动态网页。<br>13.试用ASP或PHP编写一个简单的Web应用程序，并将它布置到服务器中去。<br>14.试用JSP编写一个简单的学生成绩管理系统。<br>15.试用JSP编写一个简单的网上书店系统, 并将它布置到TOMCAT服务器中去 </p>
+<h2 id="第二章-商务表达层及其技术"><a href="#第二章-商务表达层及其技术" class="headerlink" title="第二章 商务表达层及其技术"></a>第二章 商务表达层及其技术</h2><h3 id="习题与思考-1"><a href="#习题与思考-1" class="headerlink" title="习题与思考"></a>习题与思考</h3><p>1.商务表达层的功能是什么？其平台实现方式有哪几种？</p>
+<p>商务表达层是“客户端独立的”，它只为最终用户提供了一个用户界面，在此界面中接受用户提交的事件，并将处理结果返回给用户。</p>
+<p>实现方式有：①利用Web支持以HTML为主的表达形式；②在Web基础上增加表达层工具，扩展Web的表达功能；③利用应用服务器，实现分布式的系统功能。</p>
+<p>2.静态网页的特征是什么？其体系结构如何？</p>
+<p>是指网页的显示内容对访问者而言是单向的、固定不变的，即访问者不能通过自己的操作来改变网页的显示内容，若要更新显示内容，必须由网站管理员修改存放在Web服务器上的HTML文件。</p>
+<p>体系结构：当客户在浏览器页面中点选了某个超链接，浏览器发出相应页面的请求，并通过Internet发送到Web服务器上，Web服务器识别所请求的文件后，将相应的文件通过HTTP发回到浏览器，由浏览器解释并显示在页面上。</p>
+<p>3.HTTP的含义是什么？有什么作用？具有哪些命令及命令格式？</p>
+<p>含义：是建立在TCP/IP协议之上的一种请求/应答式协议，是服务器与浏览器进行沟通的语言，用于在Internet上传输文档。绑定标准端口为80。</p>
+<p>HTTP定义的通信命令有：GET、HEAD、POST、PUT、OPTIONS…</p>
+<p>4.试通过网络，详细了解HTTP协议的内容，并说明几种状态码的含义。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">100 - 表示已收到请求的一部分，正在继续发送余下部分。</span><br><span class="line">101 - 切换协议。</span><br><span class="line">2xx - 成功，服务器成功地接受了客户端请求。</span><br><span class="line">200 - 确定。客户端请求已成功。</span><br><span class="line">201 - 已创建。</span><br><span class="line">202 - 已接受。</span><br><span class="line">203 - 非权威性信息。</span><br><span class="line">204 - 无内容。</span><br><span class="line">205 - 重置内容。</span><br><span class="line">206 - 部分内容。</span><br><span class="line">300 - 针对收到请求，服务器可执行多种操作。</span><br><span class="line">301 - 永久移动转移，请求的内容已永久移动其他新位置。</span><br><span class="line">302 - 临时移动转移，请求的内容已临时移动新的位置</span><br><span class="line">304 - 未修改。自从上次请求后，请求的内容未修改过。</span><br><span class="line">307 - 临时重定向。服务器目前从不同位置响应请求，但请求者应继续使用原有位置来进行以后的请求。</span><br><span class="line">400 - 错误的请求。</span><br><span class="line">401 -访问被拒绝。IIS定义了许多不同的401错误，它们指明更为具体的错误原因。这些具体的错代码在浏览器中显示，但不在IIS 日志中显示：</span><br><span class="line">401.1 - 登录失败。</span><br><span class="line">401.2 - 服务器配置导致登录失败。</span><br><span class="line">401.3 - 由于ACL 对资源的限制而未获得授权。</span><br><span class="line">401.4 - 筛选器授权失败。</span><br><span class="line">401.5 - ISAPI/CGI 应用程序授权失败。</span><br><span class="line">401.7 - 访问被Web 服务器上的URL 授权策略拒绝。这个错误代码为IIS 6.0 所专用。</span><br><span class="line">403 - 禁止访问：IIS 定义了许多不同的403 错误，它们指明更为具体的错误原因：</span><br><span class="line">403.1 - 执行访问被禁止。</span><br><span class="line">403.2 - 读访问被禁止。</span><br><span class="line">403.3 - 写访问被禁止。</span><br><span class="line">403.4 - 要求SSL. </span><br><span class="line">403.5 - 要求SSL 128. </span><br><span class="line">403.6 - IP 地址被拒绝。</span><br><span class="line">403.7 - 要求客户端证书。</span><br><span class="line">403.8 - 站点访问被拒绝。</span><br><span class="line">403.9 - 用户数过多。</span><br><span class="line">403.10 - 配置无效。</span><br><span class="line">403.11 - 密码更改。</span><br><span class="line">403.12 - 拒绝访问映射表。</span><br><span class="line">403.13 - 客户端证书被吊销。</span><br><span class="line">403.14 - 拒绝目录列表。</span><br></pre></td></tr></table></figure>
+
+<p>5.标记语言的种类有哪些？</p>
+<p>①SGML:它是一种元语言(Meta Language)，利用它可以定义其它无数种语言;</p>
+<p>②HTML:它是SGML的一个子集，用来制作静态网页;</p>
+<p>③XML:它也是SGML的一个子集，用来定义数据结构，用于在电子商务系统中传输大规模的数据。</p>
+<p>6.XML语言有何作用？在XML中为何要使用名称空间？</p>
+<p>XML可以根据实际需要，定义需要的标记；可以将用户界面与结构化数据分割开来；实现已知系统中的信息互通；使用XML的文件简单易于保存。</p>
+<p>XML中可能会出现元素重复的使用情况，如果使用具体标明，就必须要修改相应的DTD里的定义，但不是所有的DTD都是自己设计好的，不能说改就改；即使能改，也不能保证以后再遇到其他类似问题。使用名称空间正是为了解决这个问题。</p>
+<p>7.CSS和XSL文件的作用是什么？试举例说明。</p>
+<p>CSS是一种设计网页样式的工具；XSL是一种用来转换XML文档结构的语言，XSL文档中定义了与XML文档中各个逻辑成分相匹配的模板及匹配转化方式，由此可将XML源文件转换为带样式信息的可浏览文档，如HTML格式。</p>
+<p>8.XML文档的应用开发涉及哪几个方面？试举例说明。</p>
+<p>4方面：①构造一个置标语言；②生成XML文档；③解释XML文档；④显示XML文档。</p>
+<p>9.XSL解析器如何解析XML文档？试举例说明。</p>
+<p>XSL是一种用来转换XML文档结构的语言。XSL文档中定义了与XML文档中各个逻辑成分相匹配的模板及匹配转化方式，由此可将XML源文件转换为带样式信息的可浏览文档，如HTML格式。</p>
+<p>10.构成Web系统的五大要素分别是什么？</p>
+<p>①Web服务器；②Web浏览器；③HTTP协议；④HTML语言；⑤URL网址。</p>
+<p>11.试用Javascript编写一个简单的交互应用网页。<br>12.试用Applet编写一个简单的动态网页。<br>13.试用ASP或PHP编写一个简单的Web应用程序，并将它布置到服务器中去。<br>14.试用JSP编写一个简单的学生成绩管理系统。<br>15.试用JSP编写一个简单的网上书店系统, 并将它布置到TOMCAT服务器中去 </p>
 <hr>
-<h2 id="第三章-商务逻辑层及其技术"><a href="#第三章-商务逻辑层及其技术" class="headerlink" title="第三章 商务逻辑层及其技术"></a>第三章 商务逻辑层及其技术</h2><h3 id="习题与思考-2"><a href="#习题与思考-2" class="headerlink" title="习题与思考"></a>习题与思考</h3><p>1.商务逻辑层是如何构成的？<br>2.商务逻辑层的主要任务是什么？主要通过哪些技术手段来实现？<br>3.什么是应用服务器？有什么功能？市场上主流的应用服务器有哪些技术特征？<br>4.试比较各种不同类型的应用服务器的技术特点。<br>5.基于Java组件的第四代应用服务器与前几代应用服务器相比有哪些优点？<br>6.在多层应用体系结构中，Java平台提供了哪些关键技术？<br>7.应用服务器的基本功能是什么？<br>8.何为Web Service？有何作用？<br>9.试利用XFire开发Web Service应用 </p>
+<h2 id="第三章-商务逻辑层及其技术"><a href="#第三章-商务逻辑层及其技术" class="headerlink" title="第三章 商务逻辑层及其技术"></a>第三章 商务逻辑层及其技术</h2><h3 id="习题与思考-2"><a href="#习题与思考-2" class="headerlink" title="习题与思考"></a>习题与思考</h3><p>1.商务逻辑层是如何构成的？</p>
+<p>商务逻辑层包括核心商务逻辑应用、商务服务平台、商务支持平台、基础支持平台、Web服务平台、数据库平台、操作系统、计算机硬件及网络基础设施。</p>
+<p>2.商务逻辑层的主要任务是什么？主要通过哪些技术手段来实现？</p>
+<p>商务逻辑层处于核心地位，电子商务中的大部分功能都是在这里实现的。根据用户输入进行商业逻逻辑处理，将逻辑处理结果提供给商务表达层，完成动态内容的构建，重点是如何构建和实现复杂的业务逻辑。</p>
+<p>主要实现技术有组件、组件调用和Web服务等。</p>
+<p>3.什么是应用服务器？有什么功能？市场上主流的应用服务器有哪些技术特征？</p>
+<p>通常将Web服务器、部分商务服务平台软件、商务支持平台软件、基础支持平台软件的部分集成与开发工具集中在一个称为应用服务器的软件包中。</p>
+<p>基本功能：①提供高性能的应用程序运行环境；②提供可扩充性；③提供会话管理；④提供目录及内容管理；⑤提供商务引擎；⑥提供系统管理。</p>
+<p>应用服务器向着兼容多种技术标准的方向发展，可在多个平台上运行，能连接多种不同数据库。</p>
+<p>4.试比较各种不同类型的应用服务器的技术特点。</p>
+<p>CGI 程序是将HTML 标识嵌入在传统的程序设计语言中，如果要改变HTML的内容，就需要直接修改CGI 程序；每个CGI 程序在服务器上执行都会产生一个进程。基于ASP 的应用服务器，不但致力于克服CGI的缺点，而且还提供了集成开发的工具和相关的实用组件，通过使用 ActiveX 控件来实现相关的核心商务逻辑功能，使开发和发布动态网页变得十分容易。Java 具有跨平台性，利用Java 来构筑服务器端的应用，不管是在NT、UNIX 上还是在其他的主机系统上都能运行；利用因特网、中间件和分布对象等新功能，还能将Java 应用配置在多个结点上，实现负载平衡；另外，Java 应用还具有安全的特性。基于Java 组件和应用服务的应用服务器需具备三方面的技术：（1)是开发环境，开发人员需要一种创建新件并将已有组件加以集成的开发环境；（2)是应用程序的集成。开发人员需要集成各种应用程序，以创建出更强大的应用；（3)是应用程序的配置。</p>
+<p>5.基于Java组件的第四代应用服务器与前几代应用服务器相比有哪些优点？</p>
+<p>基于Java 组件的第四代应用服务器具有的优点有：（1)开发环境，即开发人员需要一种创建新组件并将已有组件加以集成的开发环境。（2)应用程序的集成。即由于企业商务计算环境比较复杂，它综合了传统的应用程序和新型应用程序，因此开发人员需要集成各种应用程序，以创建出更强大的应用。（3)应用程序的配置，即由于典型的Web 应用程序是分布式的，其组件运行在不同的服务器上，并且有大量的用户对其进行访问，因此需要配置平台的支持，以便在用户剧增时能有效地扩展，并保持系统的稳定。</p>
+<p>6.在多层应用体系结构中，Java平台提供了哪些关键技术？</p>
+<p>Java 提供的关键技术有跨平台性，利用Java 来构筑服务器端的应用，不管是在NT、UNIX 上还是在其他的主机系统上都能运行；利用因特网、中间件和分布对象等新功能将 Java 应用配置在多个结点上，实现负载平衡；另外，Java 应用还具有安全的特性。</p>
+<p>7.应用服务器的基本功能是什么？</p>
+<p>基本功能：①提供高性能的应用程序运行环境；②提供可扩充性；③提供会话管理；④提供目录及内容管理；⑤提供商务引擎；⑥提供系统管理。</p>
+<p>应用服务器向着兼容多种技术标准的方向发展，可在多个平台上运行，能连接多种不同数据库。</p>
+<p>8.何为Web Service？有何作用？ </p>
+<p>Web Service 是最近制定的一组标准，目的是利用成熟的Web 技术，通过 SOAP协议、WSDL 服务描述语言和UDDI 统一描述发现集成协议来实现跨语言（RMI 要求处理两端都是Java 环境）、跨平台（DCOM 要求处理两端为 Windows 平台，CORBA 要求处理两端为同一个ORB)、跨网络之间的分布处理与组件应用。</p>
+<p>9.试利用XFire开发Web Service应用 </p>
 <hr>
 <h2 id="第四章-数据层技术基础"><a href="#第四章-数据层技术基础" class="headerlink" title="第四章 数据层技术基础"></a>第四章 数据层技术基础</h2><h3 id="习题与思考-3"><a href="#习题与思考-3" class="headerlink" title="习题与思考"></a>习题与思考</h3><p>1）在SQL Server 中建立一个数据库mytest，包含以下5个表：教师Teacher、学生Student、课程Course、授课TC、选课SC，其关系模式如下：<br>Teacher(教师号Tno，姓名Tname，年龄Tage，性别Tsex，系名Tdept，电话号码Ttel，邮件地址E-mail,家庭地址Taddr)；<br>Student(学号Sno，姓名Sname，年龄Sage，性别Ssex，系名Sdept)<br>Course(课程号Cno，课程名Cname，学分数Ccredit，课时数Chour)<br>TC(教师号Tno，课程号Cno，任课学年Ayear，任课学期Semester，评教等级Rating)<br>SC(学号Sno，课程号Cno，成绩Grade)</p>
 <p><code>Create datebase mytest;</code></p>
@@ -251,18 +307,20 @@
 <p><code>select Sname from Student,SC where SC.cno = 1 and  SC.cno = 4 and SC.Grade&lt;=100 and SC.Grade&gt;=90 and Student.Sno = SC.Sno; </code></p>
 <p>③查询会计系男生的平均成绩；</p>
 <p><code>select avg(Grade) as 平均成绩 from Student,SC where Student.Sno = SC.Sno and Student.Ssex = &quot;男&quot; and Student.Sdept = &quot;会计系&quot;;</code></p>
-<p>④将一个教师记录（教师号：0899；姓名：岳枫；年龄：28；性别：女；系名：经贸系；E-mail：<a href="mailto:&#x79;&#102;&#64;&#x63;&#x69;&#x74;&#x69;&#x7a;&#46;&#110;&#101;&#116;">&#x79;&#102;&#64;&#x63;&#x69;&#x74;&#x69;&#x7a;&#46;&#110;&#101;&#116;</a>）插入到Teacher表中； </p>
+<p>④将一个教师记录（教师号：0899；姓名：岳枫；年龄：28；性别：女；系名：经贸系；E-mail：<a href="mailto:&#x79;&#x66;&#64;&#99;&#x69;&#x74;&#x69;&#x7a;&#46;&#x6e;&#101;&#x74;">&#x79;&#x66;&#64;&#99;&#x69;&#x74;&#x69;&#x7a;&#46;&#x6e;&#101;&#x74;</a>）插入到Teacher表中； </p>
 <p><code>Insert into Teacher Values(0899,&quot;岳枫&quot;,28,&quot;女&quot;,&quot;经贸系&quot;,&quot;yf@citiz.net&quot;,&quot;&quot;);</code></p>
 <p>⑤将一个系学生的平均成绩存入数据库的某个表中；</p>
 <p><code>Create table avggrade as select avg(Grade) from SC,Student where Student.Sno=SC.Sno and Student.Sdept=&quot;会计系&quot;;</code></p>
-<p>⑥将岳枫教师的E-mail改为<a href="mailto:&#x79;&#102;&#x40;&#x79;&#x61;&#x68;&#x6f;&#x6f;&#46;&#x63;&#111;&#109;">&#x79;&#102;&#x40;&#x79;&#x61;&#x68;&#x6f;&#x6f;&#46;&#x63;&#111;&#109;</a>； </p>
+<p>⑥将岳枫教师的E-mail改为<a href="mailto:&#x79;&#102;&#x40;&#121;&#97;&#x68;&#x6f;&#111;&#x2e;&#99;&#x6f;&#x6d;">&#x79;&#102;&#x40;&#121;&#97;&#x68;&#x6f;&#111;&#x2e;&#99;&#x6f;&#x6d;</a>； </p>
 <p><code>Update Teacher set 邮箱地址E-mail=yf@yahoo.com where Tname=&quot;岳枫&quot;;</code></p>
 <p>⑦删除某个学生（譬如汪莹）的选课信息。  </p>
 <p><code>Delete from Student where Sname = &quot;汪莹&quot;;</code></p>
 <hr>
-<h2 id="第六章-网络营销技术"><a href="#第六章-网络营销技术" class="headerlink" title="第六章 网络营销技术"></a>第六章 网络营销技术</h2><h3 id="习题与思考-4"><a href="#习题与思考-4" class="headerlink" title="习题与思考"></a>习题与思考</h3><p>1.什么是网络营销？网络营销的策略和功能是什么？<br>2.网络营销的方法有那些？有何特点？<br>3.什么是搜索引擎？有那些类型？<br>4.何谓搜索引擎优化？试举例说明。<br>5.在用搜索引擎进行搜索时，如何提供信息的查全率和查准率？试举例说明。<br>6.如何通过搜索引擎对诸如论文的引用情况进行统计？试举例说明。<br>7.如何通过搜索引擎对站点访问情况进行统计？试举例说明。<br>8.网络广告有哪几种类型？如何发布网络广告？<br>9.如何对网络广告效果进行评估？试举例说明。<br>10.何谓Email 营销？其与垃圾邮件有何区别？<br>11.Email营销的效果如何评价？有哪些评价指标？<br>12.如何进行在线市场调研？试举例说明。<br>13.网络营销导向的企业网站有何特征？其网络流量如何统计？<br>14.企业网站如何优化？与搜索引擎优化有何关系？ </p>
+<h2 id="第五章-电子商务安全与支付技术"><a href="#第五章-电子商务安全与支付技术" class="headerlink" title="第五章 电子商务安全与支付技术"></a>第五章 电子商务安全与支付技术</h2><h3 id="习题与思考-4"><a href="#习题与思考-4" class="headerlink" title="习题与思考"></a>习题与思考</h3><p>第三方支付给电子商务带来的好处？</p>
 <hr>
-<h2 id="第七章-基于UML的系统开发技术"><a href="#第七章-基于UML的系统开发技术" class="headerlink" title="第七章 基于UML的系统开发技术"></a>第七章 基于UML的系统开发技术</h2><h3 id="习题与思考-5"><a href="#习题与思考-5" class="headerlink" title="习题与思考"></a>习题与思考</h3><p>1.何谓用例？它具有哪些特征？用例图中存在哪些内容？<br>2.试画出某个订货中心的用例图。<br>3.何谓类图？可用它来描述类与类之间的哪些关系？如何识别一个类？<br>4.试回答包图的作用。<br>5.试画出某个电子商务子系统的顺序图和合作图。<br>6.UML如何对Web应用程序建模？试举例说明。</p>
+<h2 id="第六章-网络营销技术"><a href="#第六章-网络营销技术" class="headerlink" title="第六章 网络营销技术"></a>第六章 网络营销技术</h2><h3 id="习题与思考-5"><a href="#习题与思考-5" class="headerlink" title="习题与思考"></a>习题与思考</h3><p>1.什么是网络营销？网络营销的策略和功能是什么？<br>2.网络营销的方法有那些？有何特点？<br>3.什么是搜索引擎？有那些类型？<br>4.何谓搜索引擎优化？试举例说明。<br>5.在用搜索引擎进行搜索时，如何提供信息的查全率和查准率？试举例说明。<br>6.如何通过搜索引擎对诸如论文的引用情况进行统计？试举例说明。<br>7.如何通过搜索引擎对站点访问情况进行统计？试举例说明。<br>8.网络广告有哪几种类型？如何发布网络广告？<br>9.如何对网络广告效果进行评估？试举例说明。<br>10.何谓Email 营销？其与垃圾邮件有何区别？<br>11.Email营销的效果如何评价？有哪些评价指标？<br>12.如何进行在线市场调研？试举例说明。<br>13.网络营销导向的企业网站有何特征？其网络流量如何统计？<br>14.企业网站如何优化？与搜索引擎优化有何关系？ </p>
+<hr>
+<h2 id="第七章-基于UML的系统开发技术"><a href="#第七章-基于UML的系统开发技术" class="headerlink" title="第七章 基于UML的系统开发技术"></a>第七章 基于UML的系统开发技术</h2><h3 id="习题与思考-6"><a href="#习题与思考-6" class="headerlink" title="习题与思考"></a>习题与思考</h3><p>1.何谓用例？它具有哪些特征？用例图中存在哪些内容？<br>2.试画出某个订货中心的用例图。<br>3.何谓类图？可用它来描述类与类之间的哪些关系？如何识别一个类？<br>4.试回答包图的作用。<br>5.试画出某个电子商务子系统的顺序图和合作图。<br>6.UML如何对Web应用程序建模？试举例说明。</p>
 
       
 
