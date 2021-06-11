@@ -307,11 +307,11 @@
 <p><code>select Sname from Student,SC where SC.cno = 1 and  SC.cno = 4 and SC.Grade&lt;=100 and SC.Grade&gt;=90 and Student.Sno = SC.Sno; </code></p>
 <p>③查询会计系男生的平均成绩；</p>
 <p><code>select avg(Grade) as 平均成绩 from Student,SC where Student.Sno = SC.Sno and Student.Ssex = &quot;男&quot; and Student.Sdept = &quot;会计系&quot;;</code></p>
-<p>④将一个教师记录（教师号：0899；姓名：岳枫；年龄：28；性别：女；系名：经贸系；E-mail：<a href="mailto:&#121;&#x66;&#x40;&#99;&#x69;&#116;&#105;&#x7a;&#46;&#x6e;&#x65;&#116;">&#121;&#x66;&#x40;&#99;&#x69;&#116;&#105;&#x7a;&#46;&#x6e;&#x65;&#116;</a>）插入到Teacher表中； </p>
+<p>④将一个教师记录（教师号：0899；姓名：岳枫；年龄：28；性别：女；系名：经贸系；E-mail：<a href="mailto:&#121;&#x66;&#64;&#x63;&#105;&#x74;&#105;&#122;&#46;&#110;&#x65;&#116;">&#121;&#x66;&#64;&#x63;&#105;&#x74;&#105;&#122;&#46;&#110;&#x65;&#116;</a>）插入到Teacher表中； </p>
 <p><code>Insert into Teacher Values(0899,&quot;岳枫&quot;,28,&quot;女&quot;,&quot;经贸系&quot;,&quot;yf@citiz.net&quot;,&quot;&quot;);</code></p>
 <p>⑤将一个系学生的平均成绩存入数据库的某个表中；</p>
 <p><code>Create table avggrade as select avg(Grade) from SC,Student where Student.Sno=SC.Sno and Student.Sdept=&quot;会计系&quot;;</code></p>
-<p>⑥将岳枫教师的E-mail改为<a href="mailto:&#121;&#x66;&#64;&#x79;&#97;&#x68;&#x6f;&#x6f;&#46;&#99;&#111;&#x6d;">&#121;&#x66;&#64;&#x79;&#97;&#x68;&#x6f;&#x6f;&#46;&#99;&#111;&#x6d;</a>； </p>
+<p>⑥将岳枫教师的E-mail改为<a href="mailto:&#x79;&#x66;&#64;&#121;&#x61;&#104;&#x6f;&#x6f;&#46;&#99;&#x6f;&#109;">&#x79;&#x66;&#64;&#121;&#x61;&#104;&#x6f;&#x6f;&#46;&#99;&#x6f;&#109;</a>； </p>
 <p><code>Update Teacher set 邮箱地址E-mail=yf@yahoo.com where Tname=&quot;岳枫&quot;;</code></p>
 <p>⑦删除某个学生（譬如汪莹）的选课信息。  </p>
 <p><code>Delete from Student where Sname = &quot;汪莹&quot;;</code></p>
@@ -428,9 +428,18 @@
   
 <nav id="article-nav">
   
+    <a href="/2021/06/11/jigai/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          计算机系统概论
+        
+      </div>
+    </a>
   
-    <a href="/2021/05/20/jigai/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">计算机系统概论</div>
+  
+    <a href="/2021/05/12/aaa/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">考研经验分享</div>
       <i class="icon-circle-right"></i>
     </a>
   
